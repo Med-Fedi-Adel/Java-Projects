@@ -7,7 +7,7 @@ public class AddStudent {
     public static void main(String[] args) {
         try {
             ArrayList<Student> students  = new ArrayList<Student>();
-            File f = new File("tp7/students.ser");
+            File f = new File("students.ser");
             try {
                 FileInputStream is = new FileInputStream(f);
                 ObjectInputStream objis = new ObjectInputStream(is);

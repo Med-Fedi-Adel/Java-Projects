@@ -62,7 +62,7 @@ public class MyJFrame extends JFrame {
     public static ArrayList<Employee> readEmployees() {
         ArrayList<Employee> employees = new ArrayList<Employee>();
         try {
-            File f = new File("employee_serialization_app/employees.ser");
+            File f = new File("employees.ser");
             try {
                 FileInputStream is = new FileInputStream(f);
                 ObjectInputStream objis = new ObjectInputStream(is);
@@ -82,7 +82,7 @@ public class MyJFrame extends JFrame {
 
     public static void writeEmployees(ArrayList<Employee> employees){
         try{
-            File f = new File("employee_serialization_app/employees.ser") ;
+            File f = new File("employees.ser") ;
             try{
                 FileOutputStream os = new FileOutputStream(f) ;
                 ObjectOutputStream objos = new ObjectOutputStream(os) ;
